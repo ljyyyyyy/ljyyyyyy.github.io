@@ -97,18 +97,18 @@
 
 
 
-  <meta name="description" content="晴，烈日。 这是我的第一篇博文，在我正式上班的第一周内写出的。今天是星期四，晚上刚刚有一场入职考试，本来以为考得不错，结果发现自己稀松平常。呵，我总是这样盲目自信。 大学四年匆匆而过，我就这样混了四年，回头看什么也没有做成。本科专业是计算机，结果只顾着打游戏，自己也没有学会什么技术，就这样只能来到这么一个破烂公司，我不想以后几十年都这样。 第一篇博文，似乎不该这样吐苦水，可我现在也不知道该写什么。">
-<meta name="keywords" content="start,开始">
+  <meta name="description" content="Go语言现在并没有成熟的IDE，所以我照着网上的教程用我很喜欢的VS Code搭建了一个调试环境。 前期准备工作电脑上已经安装好Git工具及VS Code，另外我在极少一些博客中看到还需要安装Node.js,但其他博客中并未看到需要安装Node.js，不清楚具体是否需要安装Node.js。 安装Golang这个不用多说，直接去官网选择自己需要的版本下载安装即可。由于Wall的存在，go的官网并不总">
+<meta name="keywords" content="Go语言,学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://atourist0.com/2019/07/11/hello-world/index.html">
+<meta property="og:title" content="Go语言安装及vscode（win）下的环境部署">
+<meta property="og:url" content="http://atourist0.com/2019/07/15/Go语言安装及vscode（win）下的环境部署/index.html">
 <meta property="og:site_name" content="Atourist0的博客">
-<meta property="og:description" content="晴，烈日。 这是我的第一篇博文，在我正式上班的第一周内写出的。今天是星期四，晚上刚刚有一场入职考试，本来以为考得不错，结果发现自己稀松平常。呵，我总是这样盲目自信。 大学四年匆匆而过，我就这样混了四年，回头看什么也没有做成。本科专业是计算机，结果只顾着打游戏，自己也没有学会什么技术，就这样只能来到这么一个破烂公司，我不想以后几十年都这样。 第一篇博文，似乎不该这样吐苦水，可我现在也不知道该写什么。">
+<meta property="og:description" content="Go语言现在并没有成熟的IDE，所以我照着网上的教程用我很喜欢的VS Code搭建了一个调试环境。 前期准备工作电脑上已经安装好Git工具及VS Code，另外我在极少一些博客中看到还需要安装Node.js,但其他博客中并未看到需要安装Node.js，不清楚具体是否需要安装Node.js。 安装Golang这个不用多说，直接去官网选择自己需要的版本下载安装即可。由于Wall的存在，go的官网并不总">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-11T13:26:49.534Z">
+<meta property="og:updated_time" content="2019-07-18T10:20:46.704Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="晴，烈日。 这是我的第一篇博文，在我正式上班的第一周内写出的。今天是星期四，晚上刚刚有一场入职考试，本来以为考得不错，结果发现自己稀松平常。呵，我总是这样盲目自信。 大学四年匆匆而过，我就这样混了四年，回头看什么也没有做成。本科专业是计算机，结果只顾着打游戏，自己也没有学会什么技术，就这样只能来到这么一个破烂公司，我不想以后几十年都这样。 第一篇博文，似乎不该这样吐苦水，可我现在也不知道该写什么。">
+<meta name="twitter:title" content="Go语言安装及vscode（win）下的环境部署">
+<meta name="twitter:description" content="Go语言现在并没有成熟的IDE，所以我照着网上的教程用我很喜欢的VS Code搭建了一个调试环境。 前期准备工作电脑上已经安装好Git工具及VS Code，另外我在极少一些博客中看到还需要安装Node.js,但其他博客中并未看到需要安装Node.js，不清楚具体是否需要安装Node.js。 安装Golang这个不用多说，直接去官网选择自己需要的版本下载安装即可。由于Wall的存在，go的官网并不总">
 
 
 
@@ -116,7 +116,7 @@
 
   
   
-  <link rel="canonical" href="http://atourist0.com/2019/07/11/hello-world/">
+  <link rel="canonical" href="http://atourist0.com/2019/07/15/Go语言安装及vscode（win）下的环境部署/">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>Hello World | Atourist0的博客</title>
+  <title>Go语言安装及vscode（win）下的环境部署 | Atourist0的博客</title>
   
 
 
@@ -353,7 +353,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://atourist0.com/2019/07/11/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://atourist0.com/2019/07/15/Go语言安装及vscode（win）下的环境部署/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Atourist0">
@@ -370,7 +370,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World<a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name_posts/hello-world.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
+          <h1 class="post-title" itemprop="name headline">Go语言安装及vscode（win）下的环境部署<a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name_posts/Go语言安装及vscode（win）下的环境部署.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
 
               
             
@@ -396,13 +396,23 @@
                 
               
 
-              <time title="创建时间：2019-07-11 21:26:30 / 修改时间：21:26:49" itemprop="dateCreated datePublished" datetime="2019-07-11T21:26:30+08:00">2019-07-11</time>
+              <time title="创建时间：2019-07-15 13:39:18" itemprop="dateCreated datePublished" datetime="2019-07-15T13:39:18+08:00">2019-07-15</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-18 18:20:46" itemprop="dateModified" datetime="2019-07-18T18:20:46+08:00">2019-07-18</time>
+              </span>
             
           
 
@@ -427,7 +437,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">362</span>
+              <span title="本文字数">1.1k</span>
             </span>
           
 
@@ -458,14 +468,28 @@
       
 
       
-        <p>晴，烈日。</p>
-<p>这是我的第一篇博文，在我正式上班的第一周内写出的。今天是星期四，晚上刚刚有一场入职考试，本来以为考得不错，结果发现自己稀松平常。呵，我总是这样盲目自信。</p>
-<p>大学四年匆匆而过，我就这样混了四年，回头看什么也没有做成。本科专业是计算机，结果只顾着打游戏，自己也没有学会什么技术，就这样只能来到这么一个破烂公司，我不想以后几十年都这样。</p>
-<p>第一篇博文，似乎不该这样吐苦水，可我现在也不知道该写什么。坐在老旧的出租屋里，我似乎没勇气去畅想未来。省会城市的房价好贵，我只是一对农民夫妇的孩子，我不想让我的父母拿出半辈子的积蓄出来买房。</p>
-<p>不想写，真的不想写，那些我不敢去回想的记忆和飘渺模糊的未来。我知道我不能再像大学那样了，既然已经选择了做码畜，我就要去好好学习。我可是要去BAT的人啊。</p>
-<p>靠，我的文笔好烂。</p>
+        <p>Go语言现在并没有成熟的<code>IDE</code>，所以我照着网上的教程用我很喜欢的<code>VS Code</code>搭建了一个调试环境。</p>
+<h2 id="前期准备工作"><a href="#前期准备工作" class="headerlink" title="前期准备工作"></a>前期准备工作</h2><p>电脑上已经安装好<code>Git</code>工具及<code>VS Code</code>，另外我在极少一些博客中看到还需要安装<code>Node.js</code>,但其他博客中并未看到需要安装<code>Node.js</code>，不清楚具体是否需要安装<code>Node.js</code>。</p>
+<h2 id="安装Golang"><a href="#安装Golang" class="headerlink" title="安装Golang"></a>安装Golang</h2><p>这个不用多说，直接去官网选择自己需要的版本下载安装即可。由于Wall的存在，<code>go</code>的官网并不总是能访问，但<code>go</code>在国内有一个官方的镜像。</p>
+<p><a href="https://golang.org/" title="官网" target="_blank" rel="noopener">Golang官网</a><br><a href="https://golang.google.cn" title="国内镜像" target="_blank" rel="noopener">国内镜像</a></p>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>安装好之后按打开命令行，输入运行<code>go env</code>可以查看<code>golang</code>的环境配置信息和<code>go</code>的环境变量。其中，最重要的有两个：<code>GOROOT</code>和<code>GOPATH</code>。</p>
+<ul>
+<li><code>GOROOT</code>：该变量指向<code>go</code>的安装目录，默认一般为<code>C:\go</code>。</li>
+<li><code>GOPATH</code>：该变量为<code>go</code>的工程目录，不能是<code>go</code>的安装目录。它可以有多个目录，目录之间用<code>;</code>来分隔，且下面安装的<code>Go Tools</code>会安装在第一个目录。</li>
+</ul>
+<h2 id="安装Go-Tools"><a href="#安装Go-Tools" class="headerlink" title="安装Go Tools"></a>安装Go Tools</h2><ol>
+<li><p>打开命令行依次执行下面命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">::下载tools</span><br><span class="line">git clone git@github.com:golang/tools.git %GOPATH%\src\golang.org\x\tools</span><br><span class="line">::下载lint</span><br><span class="line">git clone git@github.com:golang/lint.git %GOPATH%\src\golang.org\x\lint</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>待全部下载完成后，打开<code>VS Code</code>。</p>
+</li>
+<li><p>新建一个后缀为<code>.go</code>的文件，右下角会有<code>Analysis Tools Missing</code>的提示，点击<code>Install All</code>全部安装（一共11个），安装完成后查看是否全部成功，然后重启<code>VS Code</code>。</p>
+</li>
+<li><p>重启后在刚才新建的文档里写上go代码并保存，按F5调试，验证效果。</p>
+</li>
+</ol>
 <blockquote>
-<p>渠柳 渠柳</p>
+<p>注意：<br>在安装Go Tools这一步可能会失败多次。第一步中的<code>git clone</code>如果用https的方式很可能失败，错误提示为：<br><code>error: RPC failed; curl 56 OpenSSL SSL read:SSL ERROR SYSCALL, errno 10054</code>。<br>网上找了一下解决方法主要有两种：一说是安全设置的原因，这种解决方法是在设置中关闭github的SSL验证<br><code>git config   http.sslVerify &quot;false&quot;</code>;<br>另一种说法是http或是https协议设置缓存太小的原因，这种解决方法是在设置中将推送的缓存扩大<br><code>git config http.postBuffer 524288000</code>。<br>但这两种方法似乎都没对我起到太大的作用，我觉得主要是有些下载被Wall阻止了……</p>
 </blockquote>
 
       
@@ -497,9 +521,9 @@
         
         <div class="post-tags">
           
-            <a href="/tags/start/" rel="tag"><i class="fa fa-tag"></i> start</a>
+            <a href="/tags/Go语言/" rel="tag"><i class="fa fa-tag"></i> Go语言</a>
           
-            <a href="/tags/开始/" rel="tag"><i class="fa fa-tag"></i> 开始</a>
+            <a href="/tags/学习/" rel="tag"><i class="fa fa-tag"></i> 学习</a>
           
         </div>
       
@@ -512,8 +536,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/11/Test/" rel="next" title="Test">
-                <i class="fa fa-chevron-left"></i> Test
+              <a href="/2019/07/11/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -521,10 +545,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/15/Go语言安装及vscode（win）下的环境部署/" rel="prev" title="Go语言安装及vscode（win）下的环境部署">
-                Go语言安装及vscode（win）下的环境部署 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -568,8 +588,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -670,6 +699,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前期准备工作"><span class="nav-number">1.</span> <span class="nav-text">前期准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Golang"><span class="nav-number">2.</span> <span class="nav-text">安装Golang</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境变量"><span class="nav-number">3.</span> <span class="nav-text">配置环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Go-Tools"><span class="nav-number">4.</span> <span class="nav-text">安装Go Tools</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
