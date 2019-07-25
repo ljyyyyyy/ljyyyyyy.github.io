@@ -97,18 +97,22 @@
 
 
 
-  <meta name="description" content="这是我根据Go编程指南网站来学习Go的一些笔记。 Go中的包 在Go中，每个程序都是由包来构成的，程序运行的入口包是”main“。 1package main  包的导入使用import，如果需要导入多个包，可以用圆括号将包括起来，这在Go中称为”打包“。当然，你也可以编写多个导入语句，但是Go官方推荐使用打包的方式。 123456789import &amp;quot;fmt&amp;quot; //包导入语句">
-<meta name="keywords" content="Go语言,学习">
+  <meta name="description" content="搭建了博客之后，Chrome打开博客时没有小绿锁感觉有点别扭，于是想把域名支持https。网上搜了之后，发现GithubPage支持https还挺容易的，但是也遇到了一些问题。 参考：使用 HTTPS 保护 GitHub Pages 站点 根据域名解析类型分为两类 CNAME解析  这种类型需要在你的Github Pages所在的仓库中设置开启Enforce HTTPS即可。  如果发现复选框为黑">
+<meta name="keywords" content="Hexo博客,Next主题,GithubPage">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Go编程学习（一）">
-<meta property="og:url" content="https://atourist0.com/2019/07/22/Go编程学习（一）/index.html">
+<meta property="og:title" content="Hexo博客+Next+GithubPage自定义域名支持https">
+<meta property="og:url" content="https://atourist0.com/2019/07/24/Hexo博客-Next-GithubPage自定义域名支持https/index.html">
 <meta property="og:site_name" content="Atourist0的博客">
-<meta property="og:description" content="这是我根据Go编程指南网站来学习Go的一些笔记。 Go中的包 在Go中，每个程序都是由包来构成的，程序运行的入口包是”main“。 1package main  包的导入使用import，如果需要导入多个包，可以用圆括号将包括起来，这在Go中称为”打包“。当然，你也可以编写多个导入语句，但是Go官方推荐使用打包的方式。 123456789import &amp;quot;fmt&amp;quot; //包导入语句">
+<meta property="og:description" content="搭建了博客之后，Chrome打开博客时没有小绿锁感觉有点别扭，于是想把域名支持https。网上搜了之后，发现GithubPage支持https还挺容易的，但是也遇到了一些问题。 参考：使用 HTTPS 保护 GitHub Pages 站点 根据域名解析类型分为两类 CNAME解析  这种类型需要在你的Github Pages所在的仓库中设置开启Enforce HTTPS即可。  如果发现复选框为黑">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-22T02:16:29.767Z">
+<meta property="og:image" content="https://atourist0.com/Hexo%E5%8D%9A%E5%AE%A2-Next-GithubPage%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%94%AF%E6%8C%81https/repo%E5%BC%80%E5%90%AFhttps.png">
+<meta property="og:image" content="https://atourist0.com/Hexo%E5%8D%9A%E5%AE%A2-Next-GithubPage%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%94%AF%E6%8C%81https/%E8%AF%81%E4%B9%A6%E8%BF%98%E6%9C%AA%E5%AE%8C%E6%88%90.png">
+<meta property="og:image" content="https://atourist0.com/Hexo%E5%8D%9A%E5%AE%A2-Next-GithubPage%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%94%AF%E6%8C%81https/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90%E5%8A%A0%E8%BD%BD%E6%94%B9%E4%B8%BAhttps.png">
+<meta property="og:updated_time" content="2019-07-25T03:28:26.621Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Go编程学习（一）">
-<meta name="twitter:description" content="这是我根据Go编程指南网站来学习Go的一些笔记。 Go中的包 在Go中，每个程序都是由包来构成的，程序运行的入口包是”main“。 1package main  包的导入使用import，如果需要导入多个包，可以用圆括号将包括起来，这在Go中称为”打包“。当然，你也可以编写多个导入语句，但是Go官方推荐使用打包的方式。 123456789import &amp;quot;fmt&amp;quot; //包导入语句">
+<meta name="twitter:title" content="Hexo博客+Next+GithubPage自定义域名支持https">
+<meta name="twitter:description" content="搭建了博客之后，Chrome打开博客时没有小绿锁感觉有点别扭，于是想把域名支持https。网上搜了之后，发现GithubPage支持https还挺容易的，但是也遇到了一些问题。 参考：使用 HTTPS 保护 GitHub Pages 站点 根据域名解析类型分为两类 CNAME解析  这种类型需要在你的Github Pages所在的仓库中设置开启Enforce HTTPS即可。  如果发现复选框为黑">
+<meta name="twitter:image" content="https://atourist0.com/Hexo%E5%8D%9A%E5%AE%A2-Next-GithubPage%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%94%AF%E6%8C%81https/repo%E5%BC%80%E5%90%AFhttps.png">
 
 
 
@@ -116,7 +120,7 @@
 
   
   
-  <link rel="canonical" href="https://atourist0.com/2019/07/22/Go编程学习（一）/">
+  <link rel="canonical" href="https://atourist0.com/2019/07/24/Hexo博客-Next-GithubPage自定义域名支持https/">
 
 
 
@@ -126,7 +130,7 @@
   };
 </script>
 
-  <title>Go编程学习（一） | Atourist0的博客</title>
+  <title>Hexo博客+Next+GithubPage自定义域名支持https | Atourist0的博客</title>
   
 
 
@@ -353,7 +357,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://atourist0.com/2019/07/22/Go编程学习（一）/">
+    <link itemprop="mainEntityOfPage" href="https://atourist0.com/2019/07/24/Hexo博客-Next-GithubPage自定义域名支持https/">
 
     <span hidden itemprop="author" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="name" content="Atourist0">
@@ -370,7 +374,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Go编程学习（一）<a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name_posts/Go编程学习（一）.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
+          <h1 class="post-title" itemprop="name headline">Hexo博客+Next+GithubPage自定义域名支持https<a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name_posts/Hexo博客-Next-GithubPage自定义域名支持https.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
 
               
             
@@ -396,13 +400,23 @@
                 
               
 
-              <time title="创建时间：2019-07-22 09:18:06 / 修改时间：10:16:29" itemprop="dateCreated datePublished" datetime="2019-07-22T09:18:06+08:00">2019-07-22</time>
+              <time title="创建时间：2019-07-24 18:05:40" itemprop="dateCreated datePublished" datetime="2019-07-24T18:05:40+08:00">2019-07-24</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-25 11:28:26" itemprop="dateModified" datetime="2019-07-25T11:28:26+08:00">2019-07-25</time>
+              </span>
             
           
 
@@ -427,7 +441,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">1.6k</span>
+              <span title="本文字数">589</span>
             </span>
           
 
@@ -458,32 +472,25 @@
       
 
       
-        <p>这是我根据<a href="http://tour.studygolang.com/welcome/1" target="_blank" rel="noopener">Go编程指南</a>网站来学习Go的一些笔记。</p>
-<h2 id="Go中的包"><a href="#Go中的包" class="headerlink" title="Go中的包"></a>Go中的包</h2><ol>
-<li><p>在Go中，每个程序都是由包来构成的，程序运行的入口包是”main“。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>包的导入使用<code>import</code>，如果需要导入多个包，可以用圆括号将包括起来，这在Go中称为”打包“。当然，你也可以编写多个导入语句，但是Go官方推荐使用打包的方式。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import &quot;fmt&quot; //包导入语句</span><br><span class="line">=================================</span><br><span class="line">import (</span><br><span class="line">    &quot;fmt&quot;</span><br><span class="line">    &quot;math&quot;</span><br><span class="line">) //以打包的方式导入多个包</span><br><span class="line">=================================</span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line">import &quot;math&quot; //通过编写多个导入语句来导入多个包（不推荐）</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在导入了一个包之后，就可以使用其导出的名称来调用它。在Go中，首字母大写的名称标志着它是被导出的。Foo和FOO都是被导出的名称，foo是不会被导出的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">    &quot;fmt&quot;</span><br><span class="line">    &quot;math&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">    fmt.Println(math.Pi)</span><br><span class="line">&#125;</span><br><span class="line">===================================</span><br><span class="line">该程序输出Pi的值：3.1415926535</span><br></pre></td></tr></table></figure>
+        <p>搭建了博客之后，Chrome打开博客时没有小绿锁感觉有点别扭，于是想把域名支持https。网上搜了之后，发现GithubPage支持https还挺容易的，但是也遇到了一些问题。</p>
+<p>参考：<a href="https://help.github.com/cn/articles/securing-your-github-pages-site-with-https" target="_blank" rel="noopener">使用 HTTPS 保护 GitHub Pages 站点</a></p>
+<h2 id="根据域名解析类型分为两类"><a href="#根据域名解析类型分为两类" class="headerlink" title="根据域名解析类型分为两类"></a>根据域名解析类型分为两类</h2><ul>
+<li><h3 id="CNAME解析"><a href="#CNAME解析" class="headerlink" title="CNAME解析"></a>CNAME解析</h3></li>
+</ul>
+<p>这种类型需要在你的Github Pages所在的仓库中设置开启<code>Enforce HTTPS</code>即可。</p>
+<p><img src="/Hexo%E5%8D%9A%E5%AE%A2-Next-GithubPage%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%94%AF%E6%8C%81https/repo%E5%BC%80%E5%90%AFhttps.png" alt></p>
+<p>如果发现复选框为黑色开启不了，可以将custom domian那一栏的内容先删除为空，再点击save保存，接着再次填入你的自定义域名，点击save保存。这时会出现下面的提示：</p>
+<p><img src="/Hexo%E5%8D%9A%E5%AE%A2-Next-GithubPage%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%94%AF%E6%8C%81https/%E8%AF%81%E4%B9%A6%E8%BF%98%E6%9C%AA%E5%AE%8C%E6%88%90.png" alt><br>这表示你的证书还在准备中，还没发完，一般等待一两个小时就可以了。</p>
+<ul>
+<li><h3 id="A解析"><a href="#A解析" class="headerlink" title="A解析"></a>A解析</h3></li>
+</ul>
+<p>如果你的解析为A记录的话，将解析的IP换为以下四个之一即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">185.199.108.153</span><br><span class="line">185.199.109.153</span><br><span class="line">185.199.110.153</span><br><span class="line">185.199.111.153</span><br></pre></td></tr></table></figure>
 
-</li>
-</ol>
-<h2 id="Go中的函数"><a href="#Go中的函数" class="headerlink" title="Go中的函数"></a>Go中的函数</h2><ol>
-<li><p>Go中的函数可以没有参数或者接受多个参数。==注意：类型要在变量名之后==</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"></span><br><span class="line">func add(x int,y int) int &#123;    //Go中类型要在变量名之后</span><br><span class="line">    return x + y</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">    fmt.Println(add(7,9))</span><br><span class="line">&#125;</span><br><span class="line">====================================</span><br><span class="line">该程序输出：16</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>当两个或多个连续的函数命名参数是同一类型时，则除了最后一个类型之外，其他都可以省略。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"></span><br><span class="line">func add(x,y int) int &#123;    //上面例子中的x int,y int被缩写为x,y int</span><br><span class="line">    return x + y</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">    fmt.Println(add(7,9))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Go中的函数可以返回任意数量的返回值（卧槽！！！）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"></span><br><span class="line">func swap(x,y string) (string,string) &#123;</span><br><span class="line">    return y,x     //在这个swap函数中，返回了两个字符串</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">    a,b := swap(&quot;hello&quot;,&quot;atourist0&quot;)</span><br><span class="line">    fmt.Println(a,b)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Go中函数的返回值可以被命名，并且像变量那样使用。返回值的名称应当具有一定的意义可以作为文档使用。<br>没有参数的<code>return</code>语句会返回结果的当前值，也就是直接返回。直接返回语句仅应当用在像下面这样的短函数中，在长函数中它们会影响代码的可读性。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"></span><br><span class="line">func split(sum int) (x,y int) &#123;</span><br><span class="line">    x = sum * 4 / 9</span><br><span class="line">    y = sum - x</span><br><span class="line">    return  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">    fmt.Println(split(17))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
+<p>其余的和上面CNAME步骤一样。</p>
+<h2 id="我所遇到的问题"><a href="#我所遇到的问题" class="headerlink" title="我所遇到的问题"></a>我所遇到的问题</h2><p>经过上面的步骤，一般的站点应该等待几小时之后就没问题了，但是我的博客是用<code>Hexo</code>加<code>Next</code>主题搭建在<code>Github Pages</code>上面的，就遇到了一点问题，其实这个问题在官方指导页面中也提到了，<a href="https://help.github.com/cn/articles/securing-your-github-pages-site-with-https" target="_blank" rel="noopener">官方界面</a>。</p>
+<p>其实主要就是<code>next</code>主题在前端加载某些资源的时候，用的是<code>HTTP</code>协议，只要把这些改成<code>HTTPS</code>协议就好。</p>
+<p><img src="/Hexo%E5%8D%9A%E5%AE%A2-Next-GithubPage%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%94%AF%E6%8C%81https/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90%E5%8A%A0%E8%BD%BD%E6%94%B9%E4%B8%BAhttps.png" alt></p>
 
       
     </div>
@@ -514,9 +521,11 @@
         
         <div class="post-tags">
           
-            <a href="/tags/Go语言/" rel="tag"><i class="fa fa-tag"></i> Go语言</a>
+            <a href="/tags/Hexo博客/" rel="tag"><i class="fa fa-tag"></i> Hexo博客</a>
           
-            <a href="/tags/学习/" rel="tag"><i class="fa fa-tag"></i> 学习</a>
+            <a href="/tags/Next主题/" rel="tag"><i class="fa fa-tag"></i> Next主题</a>
+          
+            <a href="/tags/GithubPage/" rel="tag"><i class="fa fa-tag"></i> GithubPage</a>
           
         </div>
       
@@ -529,8 +538,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/15/Go语言安装及vscode（win）下的环境部署/" rel="next" title="Go语言安装及vscode（win）下的环境部署">
-                <i class="fa fa-chevron-left"></i> Go语言安装及vscode（win）下的环境部署
+              <a href="/2019/07/23/Go编程学习（三）/" rel="next" title="Go编程学习（三）">
+                <i class="fa fa-chevron-left"></i> Go编程学习（三）
               </a>
             
           </div>
@@ -538,10 +547,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/22/Go语言学习（二）/" rel="prev" title="Go编程学习（二）">
-                Go编程学习（二） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -713,7 +718,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Go中的包"><span class="nav-number">1.</span> <span class="nav-text">Go中的包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Go中的函数"><span class="nav-number">2.</span> <span class="nav-text">Go中的函数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#根据域名解析类型分为两类"><span class="nav-number">1.</span> <span class="nav-text">根据域名解析类型分为两类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CNAME解析"><span class="nav-number">1.1.</span> <span class="nav-text">CNAME解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A解析"><span class="nav-number">1.2.</span> <span class="nav-text">A解析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#我所遇到的问题"><span class="nav-number">2.</span> <span class="nav-text">我所遇到的问题</span></a></li></ol></div>
             
 
           </div>
