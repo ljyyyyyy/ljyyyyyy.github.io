@@ -547,6 +547,10 @@
           
 
   
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
 
 
 
@@ -841,6 +845,35 @@
 
   
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '9dd25b6cc059646ce53a',
+    clientSecret: '7212ad87685c52c033dd6a9a7ef9a6c6815c5a67',
+    repo: 'Atourist0_Gitalk',
+    owner: 'ljyyyyyy',
+    admin: ['ljyyyyyy'],
+    id: md5(location.pathname),
+    
+      language: 'en, es-ES, fr, ru, zh-CN, zh-TW',
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
 
   
 
