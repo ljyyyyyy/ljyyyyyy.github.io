@@ -15,7 +15,7 @@ NexT.utils = NexT.$u = {
 
         if ($imageWrapLink.length < 1) {
           var imageLink = $image.attr('data-original') || $image.attr('src');
-          $imageWrapLink = $image.wrap('<a class="fancybox fancybox.image" href="' + imageLink + '" itemscope itemtype="http://schema.org/ImageObject" itemprop="url"></a>').parent('a');
+          $imageWrapLink = $image.wrap('<a class="fancybox fancybox.image" href="' + imageLink + '" itemscope itemtype="https://schema.org/ImageObject" itemprop="url"></a>').parent('a');
           if ($image.is('.post-gallery img')) {
             $imageWrapLink.addClass('post-gallery-img');
             $imageWrapLink.attr('data-fancybox', 'gallery').attr('rel', 'gallery');
@@ -131,7 +131,7 @@ NexT.utils = NexT.$u = {
 
   /**
    * Transform embedded video to support responsive layout.
-   * @see http://toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/
+   * @see https://toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/
    */
   embeddedVideoTransformer: function() {
     var $iframes = $('iframe');
